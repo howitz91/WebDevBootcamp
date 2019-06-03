@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+
+<form action ="/register" method = "post">
+  <label>
+    <p class="label-txt">ENTER YOUR USERNAME</p>
+    <input type="text" name = "username" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+<!--    <p class="label-txt">ENTER YOUR NAME</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>-->
+  <label>
+    <p class="label-txt">ENTER YOUR PASSWORD</p>
+    <input type="password" name = "password" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <button type="submit">submit</button>
+</form>
+<!--<h1>register here</h1>
+<form action ="/register" method = "post">
+    <input type = "text" name = "username" placeholder = "username">
+    <input type = "password" name = "password" placeholder = "password">
+    <button>sign up!</button>
+</form>-->
+<% include ./partials/footer %>
