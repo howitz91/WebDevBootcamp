@@ -1,5 +1,21 @@
 <% include ../partials/header %>
 
+<script>
+var fav = document.getElementById("fav");
+var button = document.getElementById("fav");
+
+button.onclick = function(){
+    
+    if(fav.className == "Favorited"){
+    
+        (fav.className = "")
+} else {
+    (fav.className = "Favorited")
+};
+
+    
+</script>
+
  <div class="container">
      <header class="jumbotron">
          <div class="container">
@@ -21,6 +37,7 @@
                    </div>
                    <p>
                        <a href ="/campgrounds/<%= campground._id %>" class = "btn btn-primary">View</a>
+                      <a id = "fav" class = "btn glyphicon glyphicon-heart" type="button"></a>
                    </p>
                 </div>
             </div>

@@ -11,6 +11,12 @@
 #deleteForm {
     display: inline;
 }
+#fav {
+    background-color: white;
+}
+#fav.Favorited {
+    background-color: red;
+}
 
 
 
